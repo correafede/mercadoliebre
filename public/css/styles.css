@@ -1,7 +1,7 @@
 *{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -50,7 +50,7 @@ header{
 }
 
 .fa-search{
-    background-color:white;
+    background-color: white;
     position: absolute;
     top: 15px;
     right: 5px;
@@ -59,6 +59,7 @@ header{
 .burger-menu {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .burger-menu i {
@@ -97,12 +98,13 @@ main article{
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 10px;
+    transition: all 400ms ease;
 }
 
 .title{
     font-size: 24px;
     color: #666;
-    margin-top:1%
+    margin-top: 1%
 }
 
 main article img{
@@ -118,13 +120,13 @@ main article img{
     border-top: 1px solid #ebebeb;
     padding: 15px;
     text-align: left;
-    position:relative;
+    position: relative;
     background-color: #ffffff;
     width: 100%;
 }
 
 .product:hover{
-    transform:scale(1.05);
+    transform: scale(1.05);
     transition: all 500ms ease;
 }
 
@@ -162,7 +164,7 @@ section .product:hover div .fa-truck{
 }
 
 .discount{
-    font-size:16px;
+    font-size: 16px;
     color: #39b54a;
     flex-basis: 70%;
 }
@@ -271,7 +273,7 @@ section .product:hover div .fa-truck{
 }
 
 footer{
-    background:white;
+    background: white;
     text-align: center;
     color: #666;
     padding: 20px;
@@ -288,11 +290,13 @@ footer .articulos i{
     padding-top: 15px;
 }
 
-.error{
-    text-align: center;
+.error404{
+    font-size: 10em;
+    margin: 20% 0px;
 }
 
-@media (min-width: 361px){
+/* # Tablet */
+@media (min-width: 768px){
     .mother{
         align-items: center;
         display: flex;
@@ -313,7 +317,7 @@ footer .articulos i{
         flex-basis: 30%;
     }
 
-    .listas{
+    .menu{
         display: flex;
         justify-content: space-between;
         padding: 15px;
@@ -391,11 +395,8 @@ footer .articulos i{
     }
 }
 
-@media (min-width: 769px){
-    div.burger-menu{
-        display: none;
-    }
-
+/* # Desktop */
+@media (min-width: 992px){
     .header-logo img{
         height: 80px;
     }
