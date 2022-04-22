@@ -67,6 +67,7 @@ header{
     color: white;
     padding: 10px;
     border-radius: 5px;
+    font-size: 2em;
 }
 
 .site{
@@ -288,6 +289,10 @@ footer .articulos i{
 
 .copyright{
     padding-top: 15px;
+}
+
+main input:required{
+    border: 1px dashed red;
 }
 
 .error404{

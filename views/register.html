@@ -43,15 +43,15 @@
     <main>
         <form id="form-register" action="/register" method="POST">
             <label>Datos Personales</label>
-                <input type="text" placeholder="Nombre y Apellido" />
-                <input type="text" placeholder="Domicilio" />
-                <input type="email" placeholder="E-mail" />
+                <input type="text" placeholder="Nombre y Apellido" required/>
+                <input type="text" placeholder="Domicilio" required/>
+                <input type="email" placeholder="E-mail" min="user@email.com" required/>
                 <label>Fecha de Nacimiento</label>
-                <input type="date" placeholder="Fecha de Nacimiento"/>
+                <input type="date" placeholder="Fecha de Nacimiento" required/>
             <label>Cuenta</label>
-                <input type="text" placeholder="Nombre de usuario" />
-                <input type="password" placeholder="Contraseña" />
-                <input type="password" placeholder="Confirmar contraseña" />
+                <input type="text" placeholder="Nombre de usuario" required/>
+                <input type="password" placeholder="Contraseña" minlength="6" maxlength="18" required/>
+                <input type="password" placeholder="Confirmar contraseña" minlength="6" maxlength="18" required/>
             <div class="perfil-de-usuario">
               <label>Perfil de usuario</label>
                 <div class="radio-options">
